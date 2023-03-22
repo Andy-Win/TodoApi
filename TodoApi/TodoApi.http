@@ -1,0 +1,39 @@
+﻿@TodoApi_HostAddress = https://localhost:7146
+
+GET {{TodoApi_HostAddress}}/weatherforecast
+
+###
+
+GET {{TodoApi_HostAddress}}/api/todoitems
+
+###
+
+POST {{TodoApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  "id":0,
+  "name": "Andy",
+  "iscomplete": true
+}
+
+###
+
+GET {{TodoApi_HostAddress}}/api/todoitems/2
+
+###
+
+PUT {{TodoApi_HostAddress}}/api/todoitems/2
+Content-Type: application/json
+
+{
+  "id":2,
+	"name": "AndyWang",
+  "iscomplete": true
+}
+
+###
+
+DELETE {{TodoApi_HostAddress}}/api/todoitems/2
+
+###
